@@ -1,6 +1,7 @@
-
+//get the current url 
 var urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams.get('id')); // "edit"
+//get the id param from the url
 let id=urlParams.get('id');
 function onload(){
     $.ajax({
@@ -10,8 +11,11 @@ function onload(){
             // var m=document.getElementById('superhero_image');
             // m.setAttribute("src", data.image.url);
             console.log(data);
+            //set the super hero image
             $('#superhero_imag').attr("src",data.image.url);
+            //set the super hero name
             $('#superhero_nam').text(data.name);
+            //set the super hero power stats and append it into the powerastats div 
             $('<div></div>',{
                 id:"power_stats",
                 class:"center"
@@ -37,7 +41,7 @@ function onload(){
             $('<h3></h3>',{
                 text:"Combat: "+data.powerstats.combat
             }).appendTo('#power_stats');
-            //biography
+            //get the biography of superhero and append  it into the biography div
             console.log(data.biography);
             $('<div></div>',{
                 id:"hero_biography",
@@ -67,7 +71,7 @@ function onload(){
             $('<h4></h4>',{
                 text:"alignment: "+data.biography.alignment
             }).appendTo('#hero_biography');
-            //for apearance
+            //get the apearance and its values from the url and append it into the html page
             $('<div></div>',{
                 id:"hero_appearance",
                 class:"center"
@@ -94,7 +98,7 @@ function onload(){
                 text:"hair-color: "+data.appearance["hair-color"]
             }).appendTo('#hero_appearance');
 
-            //hero_relation
+            //get the rest basic info  like hero_relation from the json and append it into the div of html page
             $('<h3></h3>',{
                 text:"ocuupation: "+data.work.occupation
             }).appendTo('#hero_info');
@@ -110,4 +114,5 @@ function onload(){
     })
 }
 
+//call the onload function
 onload();
