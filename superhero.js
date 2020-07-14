@@ -96,6 +96,13 @@ function Add_to_fav(i){
                 text:data.name,
                 // class:"fav_superhero_image",
             }).appendTo('#superhero'+i);
+            //button to  remove the super hero from favorite
+            $('<button></button>',{
+                text:"remove",
+                onclick:`document.getElementById("superhero${i}").remove()`,
+                class:'button'
+                // class:"fav_superhero_image",
+            }).appendTo('#superhero'+i);
         }
     })
 }
