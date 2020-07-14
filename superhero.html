@@ -5,23 +5,32 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></script>
     </head>
     <body>
-        <header>
-            <div>
-                <input id="search" type="text" placeholder="searrch" onkeyup="search()" name="super">
-
-                <ul id="list">
-                    <li></li>
-                </ul>
+        <div id="body">
+            <header>
+                <div>
+                    <input id="search" type="text" placeholder="searrch" onkeyup="search()" name="super">
+            
+                    <ul id="list">
+                        <li></li>
+                    </ul>
+                </div>
+            </header>
+            
+            <div id="superhero_dis" class="border" >
+               <img class="superhero_image" id="superhero_image">
+               <h2 ><a id="superhero_name" title="Click to see full bio" target="_blank" ></a></h2>
+               <button id="add_to_fav">Add to fav</button>
             </div>
-        </header>
+        </div>
+        <div id="fav_list" class="border">
+            <h1>favorite superheroes</h1>
+            <ul id="fav_super">
 
-        <div id="superhero_dis" class="border" >
-           <img class="superhero_image" id="superhero_image">
-           <h2 id="superhero_name"></h2>
-           <button id="add_to_fav">add to fav</button>
+            </ul>
         </div>
 
 
         <script type="text/javascript" src="superhero.js"></script>
+        
     </body>
 </html>

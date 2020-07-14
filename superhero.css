@@ -4,7 +4,7 @@
 }
 #list{
     list-style: none;
-    height: 70vh;
+    height: 60vh;
     overflow-y: scroll;
     overflow-x: hidden; 
 }
@@ -18,7 +18,7 @@
     background-color: rgb(91, 91, 247);
     color: white;
 }
-body{
+#body{
     display: flex;
 }
 header{
@@ -27,11 +27,28 @@ header{
 #superhero_dis{
     width: 65%;
     text-align: center;
-    height: 95vh;
+    height: 60vh;
 }
 .superhero_image{
-    height: 50vh;
-    width: 50vw;
+    height: 40vh;
+    width: 40vw;
     margin: auto;
-    margin-top: 200px;;
+    margin-top: 10px;;
+}
+
+#fav_super{
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.fav_superhero{
+    font-size: 1.5rem;
+    display: flex;
+}
+.fav_superhero_image{
+    height: 25vh;
+    width: 25vw;
+   
 }

@@ -1,0 +1,26 @@
+.center{
+    margin: auto;
+}
+.border{
+    border: 2px solid black;
+}
+#superhero_bio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stats{
+    height: 48vh;
+    width: 48vw;
+}
+#superhero_im{
+    text-align: center;
+}
+#superhero_imag{
+    height: 40vh;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10px;
+}
+#power{
+    display: flex;
+}
