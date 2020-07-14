@@ -1,4 +1,7 @@
-
+body{
+    background-color: black;
+    color: floralwhite;
+}
 .border{
     border: 2px solid black;
 }
@@ -51,4 +54,7 @@ header{
     height: 25vh;
     width: 25vw;
    
+}
+h2 a{
+    color: white;
 }

@@ -37,6 +37,73 @@ function onload(){
             $('<h3></h3>',{
                 text:"Combat: "+data.powerstats.combat
             }).appendTo('#power_stats');
+            //biography
+            console.log(data.biography);
+            $('<div></div>',{
+                id:"hero_biography",
+                class:"center"
+            }).appendTo('#biography');
+            $('<h1></h1>',{
+                text:"Biography"
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"Full-name: "+data.biography["full-name"]
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"Alter-egos: "+data.biography["alter-egos"]
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"aliases: "+data.biography.aliases
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"place-of-birth: "+data.biography["place-of-birth"]
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"first-appearance: "+data.biography["first-appearance"]
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"Publisher: "+data.biography.publisher
+            }).appendTo('#hero_biography');
+            $('<h4></h4>',{
+                text:"alignment: "+data.biography.alignment
+            }).appendTo('#hero_biography');
+            //for apearance
+            $('<div></div>',{
+                id:"hero_appearance",
+                class:"center"
+            }).appendTo('#appearance');
+            $('<h1></h1>',{
+                text:"Appearance"
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"Gender: "+data.appearance.gender
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"race: "+data.appearance.race
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"height: "+data.appearance.height
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"weight: "+data.appearance.weight
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"eye-color: "+data.appearance["eye-color"]
+            }).appendTo('#hero_appearance');
+            $('<h3></h3>',{
+                text:"hair-color: "+data.appearance["hair-color"]
+            }).appendTo('#hero_appearance');
+
+            //hero_relation
+            $('<h3></h3>',{
+                text:"ocuupation: "+data.work.occupation
+            }).appendTo('#hero_info');
+            $('<h3></h3>',{
+                text:"group-affiliation: "+data.connections["group-affiliation"]
+            }).appendTo('#hero_info');
+            $('<h3></h3>',{
+                text:"relatives: "+data.connections.relatives
+            }).appendTo('#hero_info');
             
             
         }
